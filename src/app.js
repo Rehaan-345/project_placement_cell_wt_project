@@ -289,7 +289,7 @@ app.post('/contact',  async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'mrranger970@gmail.com',
+            user: 'registered_mail@gmail.com',
             pass: 'erqc enlz jxzd flnb'
         }
     });
@@ -306,8 +306,8 @@ app.post('/contact',  async (req, res) => {
     })
 
     const mailOptions = {
-        from: 'mrranger970@gmail.com',
-        to: 'mohammedshujathnawaz@gmail.com', 
+        from: 'from@gmail.com',
+        to: 'to@gmail.com', 
         subject: 'New Message from Contact Form',
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
     };
